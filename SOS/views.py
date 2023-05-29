@@ -103,7 +103,7 @@ def getNearHospital(request,lat,lng):
     lngi=float(lng)
     try:
         search_string = "hospital"
-        distance = 1000
+        distance = 5000
         result = client_go.places_nearby(
                 location=(lati,lngi),
                 keyword=search_string,
